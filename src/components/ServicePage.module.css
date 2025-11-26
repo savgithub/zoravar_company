@@ -1,0 +1,274 @@
+.servicePage {
+    min-height: 100vh;
+}
+
+.hero {
+    background: var(--gradient-hero);
+    padding: 5rem 0;
+    color: white;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.heroContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.iconWrapper {
+    width: 4rem;
+    height: 4rem;
+    border-radius: var(--radius-xl);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.iconWrapper svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.heroText h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.heroText p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.ctaButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background: white;
+    color: var(--color-primary);
+    border-radius: var(--radius-lg);
+    font-weight: 600;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-lg);
+}
+
+.ctaButton:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-2xl);
+}
+
+.heroImage img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-2xl);
+}
+
+.content {
+    padding: 5rem 0;
+    background: var(--color-gray-50);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+.mainContent {
+    background: white;
+    padding: 2.5rem;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+}
+
+.mainContent h2 {
+    font-size: 2rem;
+    color: var(--color-gray-900);
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+
+.mainContent h2:first-child {
+    margin-top: 0;
+}
+
+.benefitsList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.benefitsList li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--color-gray-50);
+    border-radius: var(--radius-lg);
+}
+
+.benefitsList li svg {
+    color: var(--color-success);
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+}
+
+.benefitsList li span {
+    color: var(--color-gray-700);
+    line-height: 1.6;
+}
+
+.featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.featureCard {
+    padding: 1.5rem;
+    background: var(--color-gray-50);
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--color-gray-100);
+    transition: all var(--transition-base);
+}
+
+.featureCard:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.featureCard h3 {
+    font-size: 1.125rem;
+    color: var(--color-gray-900);
+    margin: 0;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.ctaCard,
+.infoCard {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+}
+
+.ctaCard {
+    background: var(--gradient-primary);
+    color: white;
+}
+
+.ctaCard h3,
+.infoCard h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.ctaCard h3 {
+    color: white;
+}
+
+.ctaCard p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1.5rem;
+}
+
+.sidebarButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1.5rem;
+    background: white;
+    color: var(--color-primary);
+    border-radius: var(--radius-lg);
+    font-weight: 600;
+    transition: all var(--transition-base);
+}
+
+.sidebarButton:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.infoCard ul {
+    list-style: none;
+    padding: 0;
+}
+
+.infoCard ul li {
+    padding: 0.5rem 0;
+    color: var(--color-gray-700);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.infoCard ul li::before {
+    content: '✓';
+    color: var(--color-success);
+    font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+    .heroContent {
+        grid-template-columns: 1fr;
+    }
+
+    .heroImage {
+        order: -1;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 0;
+    }
+
+    .heroText h1 {
+        font-size: 2.5rem;
+    }
+
+    .heroText p {
+        font-size: 1.125rem;
+    }
+
+    .mainContent {
+        padding: 1.5rem;
+    }
+
+    .mainContent h2 {
+        font-size: 1.5rem;
+    }
+
+    .featuresGrid {
+        grid-template-columns: 1fr;
+    }
+}

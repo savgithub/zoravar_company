@@ -1,0 +1,82 @@
+.container {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 100;
+}
+
+.pulse,
+.pulse2 {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: #10b981;
+    opacity: 0.2;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.pulse2 {
+    animation-delay: 1s;
+    opacity: 0.3;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.button {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+    transition: all var(--transition-slow);
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 35px rgba(16, 185, 129, 0.4);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.indicator {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    background: #10b981;
+    border: 2px solid white;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@media (max-width: 768px) {
+    .container {
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .button {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
