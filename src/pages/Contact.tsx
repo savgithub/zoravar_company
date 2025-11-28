@@ -162,7 +162,7 @@ const Contact: React.FC = () => {
                                         </div>
                                         <div>
                                             <h3>Phone</h3>
-                                            <a href="tel:+447947931323">+44 7947 931323</a>
+                                            <p>Contact via form</p>
                                             <p>Mon-Fri, 9AM-6PM GMT</p>
                                         </div>
                                     </div>
@@ -173,7 +173,7 @@ const Contact: React.FC = () => {
                                         </div>
                                         <div>
                                             <h3>Email</h3>
-                                            <a href="mailto:info@zoravar.co.uk">info@zoravar.co.uk</a>
+                                            <p>Contact via form</p>
                                             <p>We'll respond within 24 hours</p>
                                         </div>
                                     </div>
