@@ -33,6 +33,11 @@ import CybersecurityThreatDetection from './pages/case-studies/CybersecurityThre
 import FinanceRiskAssessment from './pages/case-studies/FinanceRiskAssessment'
 import HealthcareDiagnostics from './pages/case-studies/HealthcareDiagnostics'
 
+// Legal Pages
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsOfService from './pages/TermsOfService'
+import CookiePolicy from './pages/CookiePolicy'
+
 function App() {
     return (
         <Router>
@@ -69,6 +74,11 @@ function App() {
                     <Route path="case-studies/cybersecurity-threat-detection" element={<CybersecurityThreatDetection />} />
                     <Route path="case-studies/finance-risk-assessment" element={<FinanceRiskAssessment />} />
                     <Route path="case-studies/healthcare-diagnostics" element={<HealthcareDiagnostics />} />
+
+                    {/* Legal Pages */}
+                    <Route path="privacy-policy" element={<PrivacyPolicy />} />
+                    <Route path="terms-of-service" element={<TermsOfService />} />
+                    <Route path="cookie-policy" element={<CookiePolicy />} />
 
                     <Route path="*" element={<NotFound />} />
                 </Route>

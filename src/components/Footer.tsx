@@ -73,9 +73,9 @@ const Footer: React.FC = () => {
                 <div className={styles.bottom}>
                     <p>© {currentYear} Zoravar Consultancy Services (UK) Ltd. All rights reserved.</p>
                     <div className={styles.links}>
-                        <Link to="/">Privacy Policy</Link>
-                        <Link to="/">Terms of Service</Link>
-                        <Link to="/">Cookie Policy</Link>
+                        <Link to="/privacy-policy">Privacy Policy</Link>
+                        <Link to="/terms-of-service">Terms of Service</Link>
+                        <Link to="/cookie-policy">Cookie Policy</Link>
                     </div>
                 </div>
             </div>
