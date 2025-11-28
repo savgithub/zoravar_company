@@ -51,13 +51,13 @@ const Footer: React.FC = () => {
                             <li>
                                 <Phone size={18} />
                                 <div>
-                                    <a href="tel:+447947931323">+44 7947 931323</a>
+                                    <p>Contact via form</p>
                                     <span>Mon-Fri, 9AM-6PM GMT</span>
                                 </div>
                             </li>
                             <li>
                                 <Mail size={18} />
-                                <a href="mailto:info@zoravar.co.uk">info@zoravar.co.uk</a>
+                                <p>Contact via form</p>
                             </li>
                             <li>
                                 <MapPin size={18} />

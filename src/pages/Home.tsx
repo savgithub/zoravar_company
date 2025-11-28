@@ -208,24 +208,24 @@ const Home: React.FC = () => {
                                     Get a Free AI Consultation
                                     <ArrowRight size={20} />
                                 </Link>
-                                <a href="tel:+447947931323" className={styles.secondaryButtonWhite}>
-                                    Contact Our Experts
-                                    <Phone size={20} />
-                                </a>
+                                <Link to="/contact" className={styles.secondaryButtonWhite}>
+                                    Contact Us
+                                    <ArrowRight size={20} />
+                                </Link>
                             </div>
                             <div className={styles.ctaContact}>
                                 <div className={styles.ctaContactItem}>
                                     <Phone size={24} />
                                     <div>
-                                        <h4>Call Us</h4>
-                                        <p>+44 7947 931323</p>
+                                        <h4>Phone</h4>
+                                        <p>Contact via form</p>
                                     </div>
                                 </div>
                                 <div className={styles.ctaContactItem}>
                                     <Mail size={24} />
                                     <div>
-                                        <h4>Email Us</h4>
-                                        <p>info@zoravar.co.uk</p>
+                                        <h4>Email</h4>
+                                        <p>Contact via form</p>
                                     </div>
                                 </div>
                                 <div className={styles.ctaContactItem}>
