@@ -1,0 +1,339 @@
+.pricingPage {
+    min-height: 100vh;
+}
+
+.hero {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 4rem 0 3rem;
+    text-align: center;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    opacity: 0.95;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.packages {
+    padding: 4rem 0;
+    background: var(--color-gray-50);
+}
+
+.packagesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.packageCard {
+    background: white;
+    border-radius: var(--radius-xl);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    transition: all var(--transition-base);
+}
+
+.packageCard:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-2xl);
+}
+
+.packageCard.featured {
+    border: 3px solid var(--color-primary);
+    transform: scale(1.05);
+}
+
+.popularBadge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gradient-primary);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: var(--radius-full);
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.packageIcon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.packageCard h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-gray-900);
+}
+
+.packageDesc {
+    color: var(--color-gray-600);
+    margin-bottom: 1.5rem;
+    min-height: 3rem;
+}
+
+.price {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--color-gray-200);
+}
+
+.priceLabel {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--color-gray-500);
+    margin-bottom: 0.5rem;
+}
+
+.priceAmount {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-gray-900);
+}
+
+.features {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
+    color: var(--color-gray-700);
+}
+
+.features svg {
+    color: var(--color-primary);
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+}
+
+.packageButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 1rem;
+    background: var(--gradient-primary);
+    color: white;
+    border-radius: var(--radius-lg);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all var(--transition-base);
+    margin-bottom: 1rem;
+}
+
+.packageButton:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.bestFor {
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--color-gray-500);
+    font-style: italic;
+}
+
+.addons {
+    padding: 4rem 0;
+}
+
+.addons h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-gray-900);
+}
+
+.sectionSubtitle {
+    text-align: center;
+    color: var(--color-gray-600);
+    margin-bottom: 3rem;
+}
+
+.addonsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.addonCard {
+    background: var(--color-gray-50);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-base);
+}
+
+.addonCard:hover {
+    background: white;
+    box-shadow: var(--shadow-md);
+}
+
+.addonCard h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-gray-900);
+}
+
+.addonCard p {
+    color: var(--color-gray-600);
+    font-size: 0.875rem;
+}
+
+.guarantee {
+    padding: 4rem 0;
+    background: var(--color-gray-50);
+}
+
+.guarantee h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--color-gray-900);
+}
+
+.guaranteeGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.guaranteeItem {
+    text-align: center;
+    padding: 2rem;
+}
+
+.guaranteeItem h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-primary);
+}
+
+.guaranteeItem p {
+    color: var(--color-gray-600);
+    line-height: 1.6;
+}
+
+.faq {
+    padding: 4rem 0;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--color-gray-900);
+}
+
+.faqList {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faqItem {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: var(--color-gray-50);
+    border-radius: var(--radius-lg);
+}
+
+.faqItem h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--color-gray-900);
+}
+
+.faqItem p {
+    color: var(--color-gray-700);
+    line-height: 1.7;
+}
+
+.cta {
+    padding: 4rem 0;
+    background: var(--gradient-primary);
+    color: white;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.ctaButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background: white;
+    color: var(--color-primary);
+    border-radius: var(--radius-lg);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all var(--transition-base);
+}
+
+.ctaButton:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-xl);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .packagesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .packageCard.featured {
+        transform: none;
+    }
+
+    .addons h2,
+    .guarantee h2,
+    .faq h2,
+    .cta h2 {
+        font-size: 2rem;
+    }
+}

@@ -40,10 +40,12 @@ const Header: React.FC = () => {
                             <ChevronDown size={16} className={servicesOpen ? styles.rotated : ''} />
                         </button>
                         <div className={`${styles.dropdownMenu} ${servicesOpen ? styles.dropdownMenuOpen : ''}`}>
-                            <Link to="/services/ai-strategy" onClick={() => setMobileMenuOpen(false)}>AI Strategy</Link>
-                            <Link to="/services/machine-learning" onClick={() => setMobileMenuOpen(false)}>Machine Learning</Link>
-                            <Link to="/services/data-analytics" onClick={() => setMobileMenuOpen(false)}>Data Analytics</Link>
+                            <Link to="/services/ai-chatbots" onClick={() => setMobileMenuOpen(false)}>AI Chatbots & Automation</Link>
+                            <Link to="/services/generative-ai" onClick={() => setMobileMenuOpen(false)}>Generative AI for Marketing</Link>
                             <Link to="/services/process-automation" onClick={() => setMobileMenuOpen(false)}>Process Automation</Link>
+                            <Link to="/services/data-analytics" onClick={() => setMobileMenuOpen(false)}>Data Analytics</Link>
+                            <Link to="/services/machine-learning" onClick={() => setMobileMenuOpen(false)}>Machine Learning</Link>
+                            <Link to="/services/ai-strategy" onClick={() => setMobileMenuOpen(false)}>AI Strategy</Link>
                             <Link to="/services/email-filing-sharepoint" onClick={() => setMobileMenuOpen(false)}>Email Filing to SharePoint</Link>
                             <Link to="/services/laserfiche-to-sharepoint-migration" onClick={() => setMobileMenuOpen(false)}>Laserfiche to SharePoint Migration</Link>
                             <Link to="/services/data-engineering" onClick={() => setMobileMenuOpen(false)}>Data Engineering</Link>
@@ -72,6 +74,7 @@ const Header: React.FC = () => {
 
                     <Link to="/case-studies" onClick={() => setMobileMenuOpen(false)}>Case Studies</Link>
                     <Link to="/blogs" onClick={() => setMobileMenuOpen(false)}>Blogs</Link>
+                    <Link to="/pricing" onClick={() => setMobileMenuOpen(false)}>Pricing</Link>
                     <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact Us</Link>
                 </div>
             </nav>

@@ -8,14 +8,14 @@ const Home: React.FC = () => {
     return (
         <>
             <Helmet>
-                <title>Zoravar | Leading AI Consulting Company in Birmingham - Machine Learning & Data Analytics</title>
-                <meta name="description" content="Zoravar is Birmingham's premier AI consulting company offering machine learning, data analytics, AI agents, and AI strategy services. Transform your business with expert AI solutions." />
-                <meta name="keywords" content="AI consulting Birmingham, machine learning services UK, data analytics consulting, AI agents, AI strategy development, artificial intelligence consulting, business process automation, AI implementation services, data science consulting Birmingham" />
+                <title>Affordable AI Solutions for Small Businesses Birmingham | Zoravar - Get ROI in 90 Days</title>
+                <meta name="description" content="Transform your SMB with affordable AI chatbots, automation & analytics. Birmingham's #1 AI consultancy for small businesses. Reduce costs by 60%, see ROI in 90 days. Free consultation!" />
+                <meta name="keywords" content="affordable AI for small business, AI chatbots Birmingham, business automation SMB, AI consultant Birmingham, chatbot for small business, process automation UK, AI implementation small business, generative AI marketing, predictive analytics SMB, affordable machine learning" />
                 <link rel="canonical" href="https://zoravar.co.uk/" />
 
                 {/* Open Graph */}
-                <meta property="og:title" content="Zoravar | Leading AI Consulting Company in Birmingham" />
-                <meta property="og:description" content="Transform your business with Birmingham's leading AI consulting services. Expert machine learning, data analytics, AI agents, and AI strategy solutions." />
+                <meta property="og:title" content="Affordable AI Solutions for Small Businesses | Zoravar Birmingham" />
+                <meta property="og:description" content="AI chatbots, automation & analytics for SMBs. Reduce costs 60%, see ROI in 90 days. Birmingham's trusted AI partner for small businesses." />
                 <meta property="og:url" content="https://zoravar.co.uk/" />
                 <meta property="og:type" content="website" />
 
@@ -25,7 +25,7 @@ const Home: React.FC = () => {
                         "@context": "https://schema.org",
                         "@type": "LocalBusiness",
                         "name": "Zoravar",
-                        "description": "Leading AI consulting company in Birmingham specializing in machine learning, data analytics, AI agents, and AI strategy services.",
+                        "description": "Affordable AI solutions for small and medium businesses in Birmingham. Specializing in AI chatbots, automation, and data analytics with guaranteed ROI.",
                         "url": "https://zoravar.co.uk",
                         "telephone": "+44-7947931323",
                         "email": "info@zoravar.co.uk",
@@ -38,7 +38,9 @@ const Home: React.FC = () => {
                             "@type": "GeoCoordinates",
                             "latitude": 52.4862,
                             "longitude": -1.8904
-                        }
+                        },
+                        "priceRange": "££",
+                        "areaServed": "Birmingham, West Midlands, United Kingdom"
                     })}
                 </script>
             </Helmet>
@@ -53,13 +55,13 @@ const Home: React.FC = () => {
                     <div className={styles.container}>
                         <div className={styles.heroContent}>
                             <div className={styles.heroText}>
-                                <span className={styles.badge}>🚀 Leading AI Consulting in Birmingham</span>
+                                <span className={styles.badge}>🚀 Affordable AI for Small Businesses in Birmingham</span>
                                 <h1>
-                                    Transform Your Business with{' '}
-                                    <span className="text-gradient">AI Innovation</span>
+                                    Reduce Costs by 60% with{' '}
+                                    <span className="text-gradient">Affordable AI Solutions</span>
                                 </h1>
                                 <p>
-                                    Zoravar is Birmingham's premier AI consulting company. We help enterprises harness artificial intelligence, machine learning, and data analytics to drive growth, optimize operations, and create competitive advantages.
+                                    Zoravar helps Birmingham SMBs automate customer service, streamline operations, and boost revenue with AI chatbots, automation, and analytics. See ROI in 90 days or less. No enterprise budgets needed.
                                 </p>
                                 <div className={styles.heroButtons}>
                                     <Link to="/contact" className={styles.primaryButton}>
@@ -105,36 +107,50 @@ const Home: React.FC = () => {
                     <div className={styles.container}>
                         <div className={styles.sectionHeader}>
                             <span className={styles.badge}>Our Services</span>
-                            <h2>Comprehensive AI Solutions for Every Business Need</h2>
-                            <p>From strategy to implementation, we provide end-to-end AI services that transform how you operate and compete</p>
+                            <h2>Affordable AI Solutions That Pay for Themselves</h2>
+                            <p>From AI chatbots to automation - we deliver quick-win solutions that reduce costs, save time, and boost revenue for small businesses</p>
                         </div>
 
                         <div className={styles.servicesGrid}>
                             <div className={styles.serviceCard}>
                                 <div className={styles.serviceIcon}>
-                                    <Brain size={32} />
+                                    <Users size={32} />
                                 </div>
-                                <h3>AI Strategy & Consulting</h3>
-                                <p>Comprehensive AI roadmaps and strategic implementation guidance for business transformation</p>
+                                <h3>AI Chatbots & Customer Service Automation</h3>
+                                <p>24/7 intelligent chatbots that handle customer inquiries, reduce support costs by 60%, and boost satisfaction</p>
                                 <ul className={styles.serviceFeatures}>
-                                    <li>AI Readiness Assessment</li>
-                                    <li>Strategic Planning</li>
-                                    <li>ROI Analysis</li>
-                                    <li>Implementation Roadmap</li>
+                                    <li>WhatsApp & Web Chat Bots</li>
+                                    <li>Automated Customer Support</li>
+                                    <li>Lead Qualification</li>
+                                    <li>Multi-language Support</li>
                                 </ul>
                             </div>
 
                             <div className={styles.serviceCard}>
                                 <div className={styles.serviceIcon}>
-                                    <Cog size={32} />
+                                    <Zap size={32} />
                                 </div>
-                                <h3>Machine Learning Solutions</h3>
-                                <p>Custom ML models and algorithms tailored to solve your specific business challenges</p>
+                                <h3>Business Process Automation (RPA + AI)</h3>
+                                <p>Automate repetitive tasks and save 20+ hours per week with intelligent workflow automation</p>
                                 <ul className={styles.serviceFeatures}>
-                                    <li>Predictive Analytics</li>
-                                    <li>Custom Models</li>
-                                    <li>Data Processing</li>
-                                    <li>Model Deployment</li>
+                                    <li>Invoice & Document Processing</li>
+                                    <li>Email Automation</li>
+                                    <li>Data Entry Automation</li>
+                                    <li>Workflow Optimization</li>
+                                </ul>
+                            </div>
+
+                            <div className={styles.serviceCard}>
+                                <div className={styles.serviceIcon}>
+                                    <Brain size={32} />
+                                </div>
+                                <h3>Generative AI for Marketing & Content</h3>
+                                <p>AI-powered content creation, copywriting, and marketing automation to scale your business</p>
+                                <ul className={styles.serviceFeatures}>
+                                    <li>AI Content Generation</li>
+                                    <li>Marketing Automation</li>
+                                    <li>Personalized Campaigns</li>
+                                    <li>SEO Optimization</li>
                                 </ul>
                             </div>
 
@@ -142,13 +158,27 @@ const Home: React.FC = () => {
                                 <div className={styles.serviceIcon}>
                                     <BarChart3 size={32} />
                                 </div>
-                                <h3>Data Analytics & Intelligence</h3>
-                                <p>Transform raw data into actionable insights with advanced analytics and visualization</p>
+                                <h3>AI-Powered Data Analytics & BI</h3>
+                                <p>Turn your data into actionable insights with real-time dashboards and predictive analytics</p>
                                 <ul className={styles.serviceFeatures}>
-                                    <li>Business Intelligence</li>
-                                    <li>Data Visualization</li>
-                                    <li>Performance Metrics</li>
-                                    <li>Real-time Analytics</li>
+                                    <li>Sales Forecasting</li>
+                                    <li>Customer Insights</li>
+                                    <li>Real-time Dashboards</li>
+                                    <li>Inventory Optimization</li>
+                                </ul>
+                            </div>
+
+                            <div className={styles.serviceCard}>
+                                <div className={styles.serviceIcon}>
+                                    <Cog size={32} />
+                                </div>
+                                <h3>Predictive Analytics & Machine Learning</h3>
+                                <p>Custom ML models that predict customer behavior, optimize pricing, and reduce churn</p>
+                                <ul className={styles.serviceFeatures}>
+                                    <li>Churn Prediction</li>
+                                    <li>Demand Forecasting</li>
+                                    <li>Dynamic Pricing</li>
+                                    <li>Fraud Detection</li>
                                 </ul>
                             </div>
 
@@ -156,41 +186,13 @@ const Home: React.FC = () => {
                                 <div className={styles.serviceIcon}>
                                     <Zap size={32} />
                                 </div>
-                                <h3>AI Agents for SMBs</h3>
-                                <p>Intelligent AI agents that automate customer support, sales, and operations 24/7</p>
+                                <h3>AI Strategy & Implementation for SMBs</h3>
+                                <p>Affordable AI roadmaps tailored for small businesses - start seeing ROI in 90 days</p>
                                 <ul className={styles.serviceFeatures}>
-                                    <li>Customer Support Agents</li>
-                                    <li>Sales Development Reps</li>
-                                    <li>Operational Agents</li>
-                                    <li>Voice AI Systems</li>
-                                </ul>
-                            </div>
-
-                            <div className={styles.serviceCard}>
-                                <div className={styles.serviceIcon}>
-                                    <Users size={32} />
-                                </div>
-                                <h3>Generative AI Solutions</h3>
-                                <p>Cutting-edge generative AI for content creation, personal assistants, and automation</p>
-                                <ul className={styles.serviceFeatures}>
-                                    <li>Content Generation</li>
-                                    <li>Personal AI Assistants</li>
-                                    <li>Document Processing</li>
-                                    <li>Creative Automation</li>
-                                </ul>
-                            </div>
-
-                            <div className={styles.serviceCard}>
-                                <div className={styles.serviceIcon}>
-                                    <Zap size={32} />
-                                </div>
-                                <h3>Process Automation</h3>
-                                <p>Intelligent automation solutions that streamline operations and boost efficiency</p>
-                                <ul className={styles.serviceFeatures}>
-                                    <li>Workflow Automation</li>
-                                    <li>RPA Solutions</li>
-                                    <li>Process Optimization</li>
-                                    <li>Integration Services</li>
+                                    <li>AI Readiness Assessment</li>
+                                    <li>Quick-Win Identification</li>
+                                    <li>Budget-Friendly Solutions</li>
+                                    <li>90-Day Implementation</li>
                                 </ul>
                             </div>
                         </div>

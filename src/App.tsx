@@ -16,6 +16,8 @@ import LaserFicheMigration from './pages/services/LaserFicheMigration'
 import DataEngineering from './pages/services/DataEngineering'
 import PIIProtection from './pages/services/PIIProtection'
 import Cybersecurity from './pages/services/Cybersecurity'
+import AIChatbots from './pages/services/AIChatbots'
+import GenerativeAI from './pages/services/GenerativeAI'
 
 // Industries
 import Finance from './pages/industries/Finance'
@@ -27,16 +29,21 @@ import Retail from './pages/industries/Retail'
 import LaserFicheMigrationBlog from './pages/blogs/LaserFicheMigration'
 import EmailFilingBlog from './pages/blogs/EmailFiling'
 import EmailMetadataBlog from './pages/blogs/EmailMetadata'
+import AIChatbotsForSMBs from './pages/blogs/AIChatbotsForSMBs'
 
 // Case Studies
 import CybersecurityThreatDetection from './pages/case-studies/CybersecurityThreatDetection'
 import FinanceRiskAssessment from './pages/case-studies/FinanceRiskAssessment'
 import HealthcareDiagnostics from './pages/case-studies/HealthcareDiagnostics'
+import RetailChatbotROI from './pages/case-studies/RetailChatbotROI'
 
 // Legal Pages
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsOfService from './pages/TermsOfService'
 import CookiePolicy from './pages/CookiePolicy'
+
+// Pricing
+import Pricing from './pages/Pricing'
 
 function App() {
     return (
@@ -49,6 +56,8 @@ function App() {
                     <Route path="case-studies" element={<CaseStudiesList />} />
 
                     {/* Services Routes */}
+                    <Route path="services/ai-chatbots" element={<AIChatbots />} />
+                    <Route path="services/generative-ai" element={<GenerativeAI />} />
                     <Route path="services/ai-strategy" element={<AIStrategy />} />
                     <Route path="services/machine-learning" element={<MachineLearning />} />
                     <Route path="services/data-analytics" element={<DataAnalytics />} />
@@ -66,11 +75,13 @@ function App() {
                     <Route path="industries/retail" element={<Retail />} />
 
                     {/* Blog Routes */}
+                    <Route path="blogs/ai-chatbots-small-business-guide" element={<AIChatbotsForSMBs />} />
                     <Route path="blogs/laserfiche-sharepoint-migration" element={<LaserFicheMigrationBlog />} />
                     <Route path="blogs/email-filing-office365-sharepoint" element={<EmailFilingBlog />} />
                     <Route path="blogs/email-metadata-sharepoint-management" element={<EmailMetadataBlog />} />
 
                     {/* Case Study Routes */}
+                    <Route path="case-studies/retail-chatbot-roi" element={<RetailChatbotROI />} />
                     <Route path="case-studies/cybersecurity-threat-detection" element={<CybersecurityThreatDetection />} />
                     <Route path="case-studies/finance-risk-assessment" element={<FinanceRiskAssessment />} />
                     <Route path="case-studies/healthcare-diagnostics" element={<HealthcareDiagnostics />} />
@@ -79,6 +90,9 @@ function App() {
                     <Route path="privacy-policy" element={<PrivacyPolicy />} />
                     <Route path="terms-of-service" element={<TermsOfService />} />
                     <Route path="cookie-policy" element={<CookiePolicy />} />
+
+                    {/* Pricing */}
+                    <Route path="pricing" element={<Pricing />} />
 
                     <Route path="*" element={<NotFound />} />
                 </Route>
